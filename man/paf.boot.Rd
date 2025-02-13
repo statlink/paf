@@ -72,6 +72,6 @@ R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
 }
 
 \examples{
-y <- rgamma(100, 500, 0.03)
+y <- abs( rnorm(100) ) + 1000
 paf.boot(y, 0.25)
 }

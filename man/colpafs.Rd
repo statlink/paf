@@ -51,6 +51,6 @@ R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
 }
 
 \examples{
-y <- matrix( rgamma(100 * 10, 500, 0.03), ncol = 10 )
+y <- matrix( abs( rnorm(100) ) + 1000, ncol = 10 )
 colpafs(y, 0.25)
 }

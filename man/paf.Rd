@@ -55,7 +55,7 @@ R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
 }
 
 \examples{
-y <- rgamma(100, 500, 0.03)
+y <- abs( rnorm(100) ) + 1000
 paf(y, 0.25)
 paf( y, c(0.25, 0.5, 0.75, 1) )
 }
