@@ -17,7 +17,7 @@ colpafs(y, a)
 A numeric matrix with income data. The PaF index will be computed for each column sperately.
 }
 \item{a}{
-The value of \eqn{\alpha}, a number between 0.25 and 1.
+The value of \eqn{\alpha}. This can either be a number or a vector with many values. In any case, the \eqn{\alpha} may take values between 0.25 and 1.
 }
 }
 
@@ -46,7 +46,7 @@ R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
 %}
 
 \seealso{
-\code{\link{paf}, \link{colpafs2}
+\code{\link{paf}
 }
 }
 

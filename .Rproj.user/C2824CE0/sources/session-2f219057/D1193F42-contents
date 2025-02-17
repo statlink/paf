@@ -1,15 +1,15 @@
-\name{Bootstrapping the PaF income polarization index}
-\alias{paf.boot}
+\name{Bootstrapping the decomposed PaF income polarization index}
+\alias{paf2.boot}
 \title{
-Bootstrapping the PaF income polarization index
+Bootstrapping the decomposed PaF income polarization index
 }
 
 \description{
-Bootstrapping the PaF income polarization index
+Bootstrapping the decomposed PaF income polarization index
 }
 
 \usage{
-paf.boot(y, a, R = 1000)
+paf2.boot(y, a, R = 1000)
 }
 
 \arguments{
@@ -25,7 +25,7 @@ The number of bootstrap resamples to perform.
 }
 
 \details{
-The function compute the PaF index of Duclos, Esteban and Ray (2004) for a specific value of \eqn{\alpha}, the alienation and identification components, the 1 + normalized covariance, and also their bootstrap estimates, the estimated bias, the estimated standard error of each and the percentile bootstrap confidence interval for the PaF index are returned.
+The function computes the decomposed PaF index of Duclos, Esteban and Ray (2004) for a specific value of \eqn{\alpha}. The decomposition is with respect to the deprivation and surplus components as suggested by Araar (2008). The PaF index, the deprivation and surplus components, and also their bootstrap estimates, the estimated bias and the estimated standard error of each, and the confidence intervals are returned.
 }
 
 \value{
@@ -42,7 +42,8 @@ A matrix with: the bootstrap based estimates, the bootstrap estimated bias of th
 }
 
 \references{
-Duclos J. Y., Esteban, J. and Ray D. (2006). Polarization: concepts, measurement, estimation. In The Social Economics of Poverty (pp. 54--102). Routledge.
+Araar A. (2008). On the Decomposition of Polarization Indices: Illustrations with Chinese and Nigerian Household Surveys. CIRPEE Working Paper No. 08-06.
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1136142
 
 Duclos J. Y., Esteban, J. and Ray D. (2004). Polarization: concepts, measurement, estimation. Econometrica, 72(6): 1737--1772.
 }
@@ -58,11 +59,11 @@ R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
 %}
 
 \seealso{
-\code{\link{paf}, \link{paf2.boot}
+\code{\link{paf2}, \link{paf.boot}
 }
 }
 
 \examples{
 y <- abs( rnorm(100) ) + 1000
-paf.boot(y, 0.25)
+paf2.boot(y, 0.25)
 }

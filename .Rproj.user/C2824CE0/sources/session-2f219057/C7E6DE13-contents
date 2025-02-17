@@ -21,10 +21,7 @@ paf.boot <- function(y, a, R = 1000) {
   mesoi <- Rfast::colmeans(boot)
   bias <- index - mesoi
   se <- Rfast::colVars(boot, std = TRUE)
-  ci <- Rfast2::colQuantile( boot, probs = c(0.025, 0.975) )
-  info <- rbind(mesoi, bias, se, ci)
-  colnames(info) <- colnames(boot)
-  rownames(info) <- c("mesoi", "bias", "se", "2.5%", "97.5%" )
-  list(boot = boot, index = index, info = info)
+  ci <- Rfast2::Quantile( boot[, 1], probs = c(0.025, 0.975) )
+  list(boot = boot, index = index, mesoi = mesoi, bias = bias, se = se, ci = ci)
 }
 

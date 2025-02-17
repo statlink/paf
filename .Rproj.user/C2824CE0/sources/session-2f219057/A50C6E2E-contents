@@ -30,7 +30,8 @@ For a single value of \eqn{\alpha}, the function returns a vector with the PaF i
 }
 
 \references{
-Araar A. (2008). On the Decomposition of Polarization Indices: Illustrations with Chinese and Nigerian Household Surveys. CIRPEE Working Paper No. 08-06.
+Araar A. (2008). On the Decomposition of Polarization Indices: Illustrations with Chinese and Nigerian Household Surveys.
+CIRPEE Working Paper No. 08-06.
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1136142
 
 Duclos J. Y., Esteban, J. and Ray D. (2004). Polarization: concepts, measurement, estimation. Econometrica, 72(6): 1737--1772.
@@ -47,7 +48,7 @@ R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
 %}
 
 \seealso{
-\code{ \link{colpafs2}, \link{paf}
+\code{\link{paf}
 }
 }
 
