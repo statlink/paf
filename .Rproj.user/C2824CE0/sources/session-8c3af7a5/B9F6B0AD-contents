@@ -1,5 +1,4 @@
 paf <- function(y, a) {
-  y <- as.numeric(y)
   y <- y / mean(y)
   n <- length(y)
   d <- Rfast::vecdist(y)
